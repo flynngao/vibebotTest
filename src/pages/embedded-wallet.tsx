@@ -66,10 +66,10 @@ const EmbeddedWallet = () => {
 	return (
 		<AuthenticatedPage>
 			<Section>
-				<p className='text-md mt-2 font-bold uppercase text-gray-700'>
+				<p className='text-md mt-2 font-bold uppercase'>
 					Sign a message
 				</p>
-				<p className='mt-2 text-sm text-gray-600'>
+				<p className='mt-2 text-sm'>
 					Sign a message to verify you&apos;ve used this demo!
 				</p>
 				<Button
@@ -86,10 +86,10 @@ const EmbeddedWallet = () => {
 				/>
 			</Section>
 			<Section>
-				<p className='text-md mt-8 font-bold uppercase text-gray-700'>
+				<p className='text-md mt-8 font-bold uppercase'>
 					Transfer ETH
 				</p>
-				<p className='mt-2 text-sm text-gray-600'>
+				<p className='mt-2 text-sm'>
 					Transfer Goerli ETH from your embedded wallet. Enter a valid recipient
 					address to enable the Button.
 				</p>
@@ -114,7 +114,7 @@ const EmbeddedWallet = () => {
 					Transfer 0.004 ETH
 				</Button>
 				{txHash && (
-					<p className='mt-2 text-sm italic text-gray-600'>
+					<p className='mt-2 text-sm italic'>
 						See your transaction on{' '}
 						<a
 							className='underline'
@@ -129,10 +129,10 @@ const EmbeddedWallet = () => {
 				)}
 			</Section>
 			<Section>
-				<p className='text-md mt-8 font-bold uppercase text-gray-700'>
+				<p className='text-md mt-8 font-bold uppercase'>
 					Export your private key
 				</p>
-				<p className='mt-2 text-sm text-gray-600'>
+				<p className='mt-2 text-sm'>
 					Export your embedded wallet&apos;s private key to use in another
 					wallet client.
 				</p>
@@ -145,10 +145,10 @@ const EmbeddedWallet = () => {
 				</Button>
 			</Section>
 			<Section>
-				<p className='text-md mt-8 font-bold uppercase text-gray-700'>
+				<p className='text-md mt-8 font-bold uppercase'>
 					Learn more
 				</p>
-				<p className='mt-2 text-sm text-gray-600'>
+				<p className='mt-2 text-sm'>
 					Read our{' '}
 					<a
 						className='underline'

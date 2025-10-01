@@ -70,15 +70,15 @@ const LoadAssets = () => {
 				<p className='text-md mt-2 font-bold uppercase text-gray-700'>
 					Fund your embedded wallet
 				</p>
-				<p className='mt-2 text-sm text-gray-600'>
+				<p className='mt-2 text-sm'>
 					First, connect an external wallet to send assets to your embedded
 					wallet. The wallet <span className='font-bold'>must</span> support the
 					Base Goerli network. We recommend MetaMask.
 				</p>
-				<p className='mt-2 text-sm text-gray-600'></p>
+				<p className='mt-2 text-sm'></p>
 				<Button
 					
-					className='mt-2 w-full rounded-md bg-indigo-600 py-2 text-sm font-semibold text-white shadow-sm disabled:bg-indigo-400'
+					className='mt-2 w-full '
 					onClick={connectWallet}
 				>
 					{!externalWallet ? 'Connect a wallet' : 'Connect another wallet?'}
@@ -93,31 +93,31 @@ const LoadAssets = () => {
 					rows={9}
 					readOnly
 				/>
-				<p className='mt-2 text-sm text-gray-600'>
+				<p className='mt-2 text-sm'>
 					Next, add the Base Goerli network to your wallet.
 				</p>
 				<Button
 					
-					className='mt-2 w-full rounded-md bg-indigo-600 py-2 text-sm font-semibold text-white shadow-sm disabled:bg-indigo-400'
+					className='mt-2 w-full '
 					onClick={onAddNetwork}
 					disabled={!externalWallet}
 				>
 					Add Base Goerli Network
 				</Button>
-				<p className='mt-2 text-sm text-gray-600'>
+				<p className='mt-2 text-sm'>
 					Lastly, click the Button below to transfer 0.005 Goerli ETH to your
 					embedded wallet.
 				</p>
 				<Button
 					
-					className='mt-2 w-full rounded-md bg-indigo-600 py-2 text-sm font-semibold text-white shadow-sm disabled:bg-indigo-400'
+					className='mt-2 w-full '
 					onClick={onTransfer}
 					disabled={!externalWallet || txIsLoading}
 				>
 					Transfer 0.005 ETH
 				</Button>
 				{txHash && (
-					<p className='mt-2 text-sm italic text-gray-600'>
+					<p className='mt-2 text-sm italic'>
 						See your transaction on{' '}
 						<a
 							className='underline'

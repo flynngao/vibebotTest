@@ -25,9 +25,9 @@ const EmbeddedWallet = () => {
 	const onSign = async () => {
 		try {
 			const _signature = await signMessage(
-				'I logged into the Privy PWA demo and signed this message!'
+				{message:'I logged into the Privy PWA demo and signed this message!'}
 			)
-			setSignature(_signature)
+			setSignature(_signature.signature)
 		} catch (e) {
 			console.error('Signature failed with error ', e)
 		}
@@ -137,7 +137,7 @@ const EmbeddedWallet = () => {
 					wallet client.
 				</p>
 				<Button
-					type='Button'
+					
 					className='mt-2 w-full'
 					onClick={exportWallet}
 				>

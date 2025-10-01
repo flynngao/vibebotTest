@@ -57,7 +57,7 @@ const LoadAssets = () => {
 					chainId: `0x${baseGoerli.id.toString(16)}`,
 					chainName: baseGoerli.name,
 					nativeCurrency: baseGoerli.nativeCurrency,
-					rpcUrls: [baseGoerli.rpcUrls.public?.http[0] ?? ''],
+						rpcUrls: baseGoerli.rpcUrls.default.http,
 					blockExplorerUrls: [baseGoerli.blockExplorers?.default.url ?? ''],
 				},
 			],
